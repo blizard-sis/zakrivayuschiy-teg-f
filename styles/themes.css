@@ -28,8 +28,8 @@
 @media (prefers-color-scheme: dark) {
 
   :root.theme-auto {
-    --font-weight-text: var(--font-weight-text-dark);
-    --font-weight-title: var(--font-weight-title-dark);
+    --font-weight-text: 465;
+    --font-weight-title: 785;
     --accent-color: #00CC14;
     --background-gradient: 
       repeating-linear-gradient(90deg, #000 0, #000 2px, transparent 2px, transparent 4px), 
@@ -41,8 +41,8 @@
 @media (prefers-color-scheme: light) {
 
   :root.theme-auto {
-    --font-weight-text: var(--font-weight-text-light);
-    --font-weight-title: var(--font-weight-title-light);
+    --font-weight-text: 400;
+    --font-weight-title: 700;
     --accent-color: black;
     --background-gradient: 
       repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px), 
