@@ -156,15 +156,18 @@
   border: 2px solid var(--accent-color);
 }
 
-.save__button__icon{
+.save__button__icon {
   width: 21px;
   height: 21px;
+  color: var(--accent-color);
+}
+
+.save__button__icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
 }
 
 .save__button:hover {
   cursor: pointer;
-}
-
-.save__button .color-fill {
-  fill: var(--accent-color);
 }
