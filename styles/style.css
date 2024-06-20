@@ -130,8 +130,16 @@
 }
 
 .card_like {
+  align-self: flex-end;
   display: flex;
   gap: 12px;
+  align-items: center;
+  color: var(--accent-color);
+}
+
+.like-icon {
+  width: 24px;
+  height: 27px;
 }
 
 .card__like-button {
