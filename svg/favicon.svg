@@ -1,11 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" fill="currentColor">
   <style>
     @media (prefers-color-scheme: dark) {
+
       .color-fill {
         fill: #00cc14;
       }
     }
+
     @media (prefers-color-scheme: light) {
+
       .color-fill {
         fill: black;
       }

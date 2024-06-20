@@ -48,7 +48,6 @@
 }
 
 @media (prefers-color-scheme: dark) {
-
   :root.theme-auto {
     --font-weight-text: 465;
     --font-weight-title: 785;
@@ -72,7 +71,6 @@
 }
 
 @media (prefers-color-scheme: light) {
-
   :root.theme-auto {
     --font-weight-text: 400;
     --font-weight-title: 700;

@@ -26,7 +26,6 @@
 }
 
 @supports (font-variation-settings: normal) {
-
   .page {
     font-family: var(--font-primary), sans-serif;
   }
@@ -95,6 +94,7 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
+  margin-block-end: 100px;
 }
 
 .card {
@@ -121,4 +121,37 @@
   gap: 25px;
   font-size: 18px;
   font-weight: var(--font-weight-text);
+}
+
+.card_like {
+  display: flex;
+  gap: 12px;
+}
+
+.card__like-button {
+  background: transparent;
+  border: 2px solid var(--accent-color);
+  width: 130px;
+  height: 38px;
+  font-size: 14px;
+  font-family: var(--font-accent);
+  background-color: var(--page-background-color);
+}
+
+.save__button {
+  width: 335px;
+  height: 55px;
+  font-size: 14px;
+  font-family: var(--font-accent);
+  background-color: var(--page-background-color);
+  align-self: center;
+  border: 2px solid var(--accent-color);
+}
+
+.save__button:hover {
+  cursor: pointer;
+}
+
+.save__button .color-fill {
+  fill: var(--accent-color);
 }
