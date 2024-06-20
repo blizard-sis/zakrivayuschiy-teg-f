@@ -26,6 +26,7 @@
 }
 
 @supports (font-variation-settings: normal) {
+
   .page {
     font-family: var(--font-primary), sans-serif;
   }
