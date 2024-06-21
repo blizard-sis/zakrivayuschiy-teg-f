@@ -18,19 +18,19 @@
   margin: 0 auto;
   color: var(--accent-color);
   font-family: var(--font-primary);
-  font-weight: var(--font-weight-text);
+  font-variation-settings: var(--font-weight-text);
   background-color: var(--background-color);
   background-image: repeating-linear-gradient(
       90deg,
-      var(--gradient-color-background) 0,
+      var(--gradient-color-background),
       var(--gradient-color-background) 2px,
       transparent 2px,
       transparent 4px
     ),
     repeating-linear-gradient(
       180deg,
-      var(--gradient-color-start) 0,
-      var(--gradient-color-end) 2px,
+      var(--gradient-color-background),
+      var(--gradient-color-background) 2px,
       transparent 2px,
       transparent 4px
     ),
@@ -114,6 +114,7 @@
 
 .button__text {
   font-family: var(--font-accent);
+  font-variation-settings: var(--font-weight-text);
   font-size: 14px;
 }
 
@@ -124,7 +125,7 @@
 
 .card__title {
   padding: 3px 10px;
-  font-weight: var(--font-weight-title);
+  font-variation-settings: var(--font-weight-text);
   font-size: 18px;
 }
 
@@ -133,7 +134,7 @@
   flex-direction: column;
   gap: 25px;
   margin: 25px;
-  font-weight: var(--font-weight-text);
+  font-variation-settings: var(--font-weight-text);
   font-size: 18px;
 }
 
@@ -142,6 +143,8 @@
   border-top: 2px solid var(--accent-color);
   border-bottom: 2px solid var(--accent-color);
   overflow: hidden;
+  width: 100%;
+  padding-top: 100%;
 }
 
 .card__image-label {
@@ -157,14 +160,18 @@
     0 1px var(--background-color),
     1px 0 var(--background-color),
     0 -1px var(--background-color);
-  font-variation-settings: var(--text-font-weight);
+  font-variation-settings: var(--font-weight-text);
   mix-blend-mode: hard-light;
 }
 
 .card__image {
-  display: block;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  height: 100%;
+  width: auto;
+  transform: translate(-50%, -50%);
   object-fit: cover;
-  object-position: center;
 }
 
 .card_like {
@@ -184,8 +191,6 @@
   width: 130px;
   height: 38px;
   border: 2px solid var(--accent-color);
-  font-family: var(--font-accent);
-  font-size: 14px;
   background: transparent;
   background-color: var(--background-color);
 }
