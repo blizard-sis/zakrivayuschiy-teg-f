@@ -181,6 +181,34 @@
   transform: translate(-50%, -50%);
 }
 
+.filter__grayscale {
+  filter: grayscale(70%);
+}
+
+.filter__saturate {
+  filter: saturate(300%);
+}
+
+.filter__hue-rotate {
+  filter: hue-rotate(25deg);
+}
+
+.filter__invert {
+  filter: invert(75%);
+}
+
+.filter__sepia {
+  filter: sepia(80%);
+}
+
+.filter__blur {
+  filter: blur(25px);
+}
+
+.filter__multi {
+  filter: saturate(250%) hue-rotate(90deg) grayscale(20%) invert(25%) blur(2px);
+}
+
 .card_like {
   display: flex;
   align-items: center;
