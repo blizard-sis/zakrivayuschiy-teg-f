@@ -6,8 +6,8 @@
 */
 
 :root.theme-dark {
-  --font-weight-text: "wght" 465;
-  --font-weight-title: "wght" 785;
+  --font-weight-text: 'wght' 465;
+  --font-weight-title: 'wght' 785;
   --accent-color: #00cc14;
   --background-color: black;
   --gradient-color-background: var(--background-color);
@@ -16,8 +16,8 @@
 }
 
 :root.theme-light {
-  --font-weight-text: "wght" 400;
-  --font-weight-title: "wght" 700;
+  --font-weight-text: 'wght' 400;
+  --font-weight-title: 'wght' 700;
   --accent-color: black;
   --background-color: white;
   --gradient-color-background: #d3d3d3;
