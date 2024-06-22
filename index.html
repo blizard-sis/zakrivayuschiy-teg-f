@@ -142,7 +142,7 @@
             </div>
             <button
               type="button"
-              class="card__like-button"
+              class="card__like-button button__text"
               aria-label="Нравится"
             >
               Like
@@ -177,7 +177,7 @@
             </div>
             <button
               type="button"
-              class="card__like-button"
+              class="card__like-button button__text"
               aria-label="Нравится"
             >
               Like
@@ -213,7 +213,7 @@
             </div>
             <button
               type="button"
-              class="card__like-button"
+              class="card__like-button button__text"
               aria-label="Нравится"
             >
               Like
@@ -246,7 +246,7 @@
             </div>
             <button
               type="button"
-              class="card__like-button"
+              class="card__like-button button__text"
               aria-label="Нравится"
             >
               Like
@@ -281,7 +281,7 @@
             </div>
             <button
               type="button"
-              class="card__like-button"
+              class="card__like-button button__text"
               aria-label="Нравится"
             >
               Like
@@ -320,7 +320,7 @@
             </div>
             <button
               type="button"
-              class="card__like-button"
+              class="card__like-button button__text"
               aria-label="Нравится"
             >
               Like
@@ -340,20 +340,24 @@
       </button>
     </main>
     <dialog class="dialog" id="dialog-id">
+      <div class="dialog__container">
         <div class="dialog__text">
-          <svg class="">
-            <use href="./svg/disk.svg#icon-disk2"></use>
-          </svg>
-          <span class="dialog__text">Вставьте дискету, чтобы продолжить</span>
+          <div class="dialog__text__icon">
+            <svg class="">
+              <use href="./svg/disk.svg#icon-disk2"></use>
+            </svg>
+          </div>
+          <span>Вставьте дискету, чтобы продолжить</span>
         </div>
         <button
           class="button ok__button"
           onclick="window['dialog-id'].close()"
           type="submit"
           aria-controls="dialog-id"
-          >
+        >
           <span class="button__text">OK</span>
         </button>
+      </div>
     </dialog>
     <script src="./scripts/like.js"></script>
   </body>
