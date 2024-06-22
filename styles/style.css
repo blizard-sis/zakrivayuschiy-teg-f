@@ -18,7 +18,7 @@
   margin: 0 auto;
   color: var(--accent-color);
   font-family: var(--font-primary);
-  font-variation-settings: var(--font-weight-text);
+  font-variation-settings: 'wght' (var(--font-weight-text), 400);
   background-color: var(--background-color);
   background-image: repeating-linear-gradient(
       90deg,
