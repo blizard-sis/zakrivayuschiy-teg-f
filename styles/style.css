@@ -125,7 +125,7 @@
 .card__title {
   padding: 3px 10px;
   font-size: 18px;
-  font-variation-settings: var(--font-weight-title);
+  font-variation-settings: 'wght' (var(--font-weight-title), 700);
 }
 
 .card__text {
