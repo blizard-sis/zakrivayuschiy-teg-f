@@ -8,8 +8,8 @@
 @media (prefers-color-scheme: dark) {
 
   :root.theme-auto {
-    --font-weight-text: 'wght' (465,400);
-    --font-weight-title: 'wght' (785,700);
+    --font-weight-text: 'wght' 465;
+    --font-weight-title: 'wght' 785;
     --accent-color: #00cc14;
     --background-color: black;
     --gradient-color-background: var(--background-color);
