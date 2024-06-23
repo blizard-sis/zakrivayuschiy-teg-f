@@ -89,8 +89,7 @@
 }
 
 .theme-menu__button:hover,
-.theme-menu__button:focus
- {
+.theme-menu__button:focus {
   opacity: 0.6;
   transition: opacity 0.3s;
 }
@@ -254,19 +253,27 @@
 }
 
 .like-icon {
-  width: 24px;
-  height: 27px;
+  width: 27px;
+  height: 24px;
+}
+
+.card__icon-button,
+.card__like-button {
+  background: transparent;
+}
+
+.card__icon-button {
+  border: 1px solid transparent;
 }
 
 .card__like-button {
   width: 130px;
   height: 38px;
   border: 2px solid var(--accent-color);
-  background: transparent;
-  background-color: var(--background-color);
 }
 
-.card__like-button:hover {
+.card__like-button:hover,
+.card__icon-button:hover {
   cursor: pointer;
 }
 
@@ -274,6 +281,12 @@
   box-shadow: 2px 2px 0 0 var(--accent-color);
   outline: none;
   transition: box-shadow 0.3s;
+}
+
+.card__icon-button:focus {
+  outline: none;
+  border: 2px solid var(--accent-color);
+  transition: border 0.3s;
 }
 
 .save__button {
