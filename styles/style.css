@@ -150,6 +150,7 @@
   font-family: var(--font-accent);
   font-size: 14px;
   text-transform: uppercase;
+  position: relative;
 }
 
 .card {
@@ -264,9 +265,12 @@
 
 .card__icon-button {
   border: 1px solid transparent;
+  width: 38px;
+  height: 38px;
 }
 
 .card__like-button {
+  position: relative;
   width: 130px;
   height: 38px;
   border: 2px solid var(--accent-color);
@@ -289,7 +293,27 @@
   transition: border 0.3s;
 }
 
+.card__like-button::before,
+.save__button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.card__like-button:hover::before,
+.save__button:hover:before {
+  transform: scaleX(1);
+}
+
 .save__button {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,18 +325,26 @@
   background-color: var(--background-color);
 }
 
-.save__button svg {
+.save__button__icon {
+  fill: var(--accent-color);
   width: 21px;
   height: 21px;
-  color: var(--accent-color);
-}
-
-.save__button__icon {
-  fill: currentColor;
 }
 
 .save__button:hover {
   cursor: pointer;
+}
+
+.card__like-button:hover .button__text,
+.save__button:hover .button__text{
+  color: var(--background-color);
+  transition: color 0.5s ease-in-out;
+}
+
+.save__button:hover .save__button__icon {
+  color: var(--background-color);
+  transition: color 0.5s ease-in-out;
+  mix-blend-mode: difference;
 }
 
 .dialog {
