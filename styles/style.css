@@ -68,8 +68,8 @@
 
 .header__link {
   font-size: 65px;
-  text-transform: uppercase;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .header__title {
@@ -88,11 +88,11 @@
 }
 
 .theme-menu__button {
-  font-size: 14px;
-  text-transform: uppercase;
   position: relative;
   border: none;
   opacity: 1;
+  font-size: 14px;
+  text-transform: uppercase;
   background-color: transparent;
   transition: opacity 0.3s;
 }
@@ -156,10 +156,10 @@
 }
 
 .button__text {
+  position: relative;
   font-family: var(--font-accent);
   font-size: 14px;
   text-transform: uppercase;
-  position: relative;
 }
 
 .card {
@@ -254,11 +254,13 @@
   filter: saturate(250%) hue-rotate(90deg) grayscale(20%) invert(25%) blur(2px);
 }
 
-.card_like {
+.card__like {
   display: flex;
-  align-items: center;
-  gap: 12px;
-  align-self: flex-end;
+  flex-direction: row;
+  justify-content: end;
+  width: 100%;
+  margin-block-end: 25px;
+  padding-inline: 25px;
   color: var(--accent-color);
 }
 
@@ -273,9 +275,9 @@
 }
 
 .card__icon-button {
-  border: 1px solid transparent;
   width: 38px;
   height: 38px;
+  border: 1px solid transparent;
 }
 
 .card__like-button {
@@ -297,8 +299,8 @@
 }
 
 .card__icon-button:focus {
-  outline: none;
   border: 2px solid var(--accent-color);
+  outline: none;
   transition: border 0.3s;
 }
 
@@ -335,9 +337,9 @@
 }
 
 .save__button__icon {
-  fill: var(--accent-color);
   width: 21px;
   height: 21px;
+  fill: var(--accent-color);
 }
 
 .save__button:hover {
@@ -357,10 +359,17 @@
 }
 
 .dialog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
   width: 357px;
   height: 195px;
   border: 2px solid var(--accent-color);
   padding: 30px;
+  color: var(--accent-color);
+  font-family: var(--font-accent);
+  font-size: 14px;
   background: var(--background-color);
 }
 
@@ -374,17 +383,6 @@
   pointer-events: none;
 }
 
-.dialog__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 30px;
-  height: 100%;
-  color: var(--accent-color);
-  font-family: var(--font-accent);
-  font-size: 14px;
-}
-
 .dialog__text {
   display: flex;
   flex-direction: row;
@@ -392,15 +390,10 @@
   gap: 20px;
 }
 
-.dialog__text__icon {
+.dialog__text svg {
   width: 39px;
   height: 39px;
   color: var(--accent-color);
-}
-
-.dialog__text__icon svg {
-  width: 100%;
-  height: 100%;
 }
 
 .ok__button {
