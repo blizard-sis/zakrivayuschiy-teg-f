@@ -58,29 +58,38 @@
   background-color: var(--background-color);
 }
 
-.header__title {
-  font-size: 65px;
+.header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-.header__subtitle {
+.header__link {
+  font-size: 65px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header__title {
   font-size: 23px;
   text-transform: uppercase;
 }
 
-.header__theme-menu {
-  height: 120px;
-  padding-block: 15px;
+.theme-menu {
+  margin-block: 25px;
 }
 
 .theme-menu__list {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  height: 70px;
-  font-size: 14px;
 }
 
 .theme-menu__button {
+  font-size: 14px;
+  text-transform: uppercase;
   position: relative;
   border: none;
   opacity: 1;
@@ -134,7 +143,7 @@
   content: '▶';
   position: absolute;
   top: 50%;
-  left: -10px;
+  left: -15px;
   transform: translateY(-50%);
 }
 
@@ -336,7 +345,7 @@
 }
 
 .card__like-button:hover .button__text,
-.save__button:hover .button__text{
+.save__button:hover .button__text {
   color: var(--background-color);
   transition: color 0.5s ease-in-out;
 }
