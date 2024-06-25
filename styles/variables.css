@@ -3,30 +3,30 @@
 :root {
   --font-primary: 'Inter', sans-serif;
   --font-accent: 'PressStart2P', sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-
-  :root.theme-auto {
-    --font-weight-text: 'wght' 465;
-    --font-weight-title: 'wght' 785;
-    --accent-color: #00cc14;
-    --background-color: black;
-    --gradient-color-background: var(--background-color);
-    --gradient-color-start: #007f0c;
-    --gradient-color-end: #004306;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-
-  :root.theme-auto {
-    --font-weight-text: 'wght' 400;
-    --font-weight-title: 'wght' 700;
-    --accent-color: black;
-    --background-color: white;
-    --gradient-color-background: #d3d3d3;
-    --gradient-color-start: #e7e7e7;
-    --gradient-color-end: #1a1a1a;
-  }
+  --background-image: repeating-linear-gradient(
+      90deg,
+      var(--gradient-color-background, black),
+      var(--gradient-color-background, black) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      180deg,
+      var(--gradient-color-background, black),
+      var(--gradient-color-background, black) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(
+      180deg,
+      var(--gradient-color-start, #007f0c) 0.01%,
+      var(--gradient-color-end, #004306)
+    );
+  --header-container-margin-block-start: clamp(
+    7.5rem,
+    6.202rem + 5.538vw,
+    8.625rem
+  );
+  --header-link-font-size: clamp(3.063rem, 1.909rem + 4.923vw, 4.063rem);
+  --header-title-font-size: clamp(0.875rem, 0.226rem + 2.769vw, 1.438rem);
 }

@@ -24,3 +24,29 @@
   --gradient-color-start: #e7e7e7;
   --gradient-color-end: #1a1a1a;
 }
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --font-weight-text: 'wght' 465;
+    --font-weight-title: 'wght' 785;
+    --accent-color: #00cc14;
+    --background-color: black;
+    --gradient-color-background: var(--background-color);
+    --gradient-color-start: #007f0c;
+    --gradient-color-end: #004306;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+
+  :root {
+    --font-weight-text: 'wght' 400;
+    --font-weight-title: 'wght' 700;
+    --accent-color: black;
+    --background-color: white;
+    --gradient-color-background: #d3d3d3;
+    --gradient-color-start: #e7e7e7;
+    --gradient-color-end: #1a1a1a;
+  }
+}

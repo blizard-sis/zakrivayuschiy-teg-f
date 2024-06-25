@@ -13,19 +13,19 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
-.theme-menu__button:disabled::before {
-  animation: arrow-animation 0.5s ease-in-out infinite alternate;
-}
-
 @keyframes arrow-animation {
 
   from {
-    left: -17px;
+    left: -20px;
   }
 
   to {
-    left: -15px;
+    left: -16px;
   }
+}
+
+.theme-menu__button:disabled::before {
+  animation: arrow-animation 0.5s ease-in-out infinite alternate;
 }
 
 @keyframes button-animation {
@@ -37,4 +37,16 @@
   to {
     transform: translateX(0);
   }
+}
+
+.card__like-button::before,
+.save__button::before {
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.card__like-button:hover::before,
+.save__button:hover:before {
+  transform: scaleX(1);
 }
