@@ -29,4 +29,12 @@
   );
   --header-link-font-size: clamp(3.063rem, 1.909rem + 4.923vw, 4.063rem);
   --header-title-font-size: clamp(0.875rem, 0.226rem + 2.769vw, 1.438rem);
+  --disk-size: 21px;
+}
+
+@media ( width <= 375px) {
+
+  :root {
+    --disk-size: 28px;
+  }
 }
