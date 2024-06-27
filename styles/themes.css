@@ -27,9 +27,26 @@
   --like-contour-color: var(--accent-color, black);
 }
 
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --font-weight-text: 465;
+    --font-weight-title: 785;
+    --accent-color: #00cc14;
+    --background-color: black;
+    --gradient-color-background: var(--background-color, black);
+    --gradient-color-start: #007f0c;
+    --gradient-color-end: #004306;
+    --like-contour-color: var(--accent-color, #00cc14);
+  }
+}
+
 @media (prefers-color-scheme: light) {
 
   :root {
+    --font-weight-text: 400;
+    --font-weight-title: 700;
     --accent-color: black;
     --background-color: white;
     --gradient-color-background: #d3d3d3;
