@@ -54,6 +54,10 @@
   text-transform: uppercase;
 }
 
+.header__link:focus-visible {
+  outline: 2px solid var(--accent-color, #00cc14);
+}
+
 .header__title {
   font-size: var(--header-title-font-size, 23px);
   text-transform: uppercase;

@@ -57,3 +57,11 @@ ol {
 figure {
   margin: 0;
 }
+
+button:focus {
+  outline: none;
+}
+
+a:focus {
+  outline: none;
+}
