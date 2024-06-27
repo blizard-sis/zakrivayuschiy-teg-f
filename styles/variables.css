@@ -3,6 +3,15 @@
 :root {
   --font-primary: 'Inter', sans-serif;
   --font-accent: 'PressStart2P', sans-serif;
+  --font-weight-text: 465;
+  --font-weight-title: 785;
+  --accent-color: #00cc14;
+  --button-text-color: var(--accent-color, #00cc14);
+  --background-color: black;
+  --gradient-color-background: var(--background-color, black);
+  --gradient-color-start: #007f0c;
+  --gradient-color-end: #004306;
+  --like-contour-color: var(--accent-color, #00cc14);
   --background-image: repeating-linear-gradient(
       90deg,
       var(--gradient-color-background, black),
@@ -22,11 +31,7 @@
       var(--gradient-color-start, #007f0c) 0.01%,
       var(--gradient-color-end, #004306)
     );
-  --header-container-margin-block-start: clamp(
-    7.5rem,
-    6.202rem + 5.538vw,
-    8.625rem
-  );
+  --header-container-margin-block-start: clamp(7.5rem, 6.346rem + 4.923vw, 8.5rem);
   --header-link-font-size: clamp(3.063rem, 1.909rem + 4.923vw, 4.063rem);
   --header-title-font-size: clamp(0.875rem, 0.226rem + 2.769vw, 1.438rem);
   --disk-size: 21px;
