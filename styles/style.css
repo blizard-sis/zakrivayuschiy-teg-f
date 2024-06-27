@@ -167,6 +167,7 @@
 
 .button__text {
   position: relative;
+  color: var(--button-text-color, #00cc14);
   font-family: var(--font-accent, 'PressStart2P', sans-serif);
   font-size: 14px;
   mix-blend-mode: difference;
@@ -295,12 +296,12 @@
   align-items: center;
   gap: 8px;
   align-self: center;
-  width: 335px;
-  padding: 15px;
+  max-width: 337px;
+  padding: 15px 19px;
 }
 
 .disk-icon {
-  fill: var(--accent-color, #00cc14);
+  color: var(--button-text-color, #00cc14);
   inline-size: var(--disk-size, 21px);
   block-size: var(--disk-size, 21px);
   mix-blend-mode: difference;
@@ -316,7 +317,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 30px;
-  width: 357px;
+  max-width: 357px;
   min-height: 195px;
   border: 2px solid var(--accent-color, #00cc14);
   padding: 30px;
