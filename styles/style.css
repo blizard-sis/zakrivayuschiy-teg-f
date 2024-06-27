@@ -312,13 +312,14 @@
   padding: 15px;
   border: 2px solid var(--accent-color, #00cc14);
   background-color: var(--background-color, black);
+  color: var(--accent-color, #00cc14);
 }
 
 .disk-icon {
   inline-size: var(--disk-size, 21px);
   block-size: var(--disk-size, 21px);
   mix-blend-mode: difference;
-  color: var(--accent-color, #00cc14);
+  fill: var(--accent-color, #00cc14);
 }
 
 .disk-icon svg {
