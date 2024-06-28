@@ -74,7 +74,7 @@
   gap: 14px;
 }
 
-.theme-menu__item{
+.theme-menu__item {
   height: 14px;
 }
 
@@ -349,7 +349,7 @@
   text-transform: uppercase;
 }
 
-.dialog__text-icon{
+.dialog__text-icon {
   inline-size: 39px;
   block-size: 39px;
 }
