@@ -101,7 +101,7 @@
 
 .theme-menu__button:disabled {
   opacity: 0.6;
-  pointer-events: all;
+  pointer-events: none;
 }
 
 .theme-menu__button::after {
@@ -117,10 +117,7 @@
   transform-origin: left;
 }
 
-.theme-menu__button:hover::after,
-.theme-menu__button:focus-visible::after,
-.theme-menu__button:disabled:hover::after,
-.theme-menu__button:disabled:focus-visible::after {
+.theme-menu__button:focus-visible::after {
   transform: scaleX(1);
 }
 
